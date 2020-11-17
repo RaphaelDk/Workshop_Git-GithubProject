@@ -60,7 +60,7 @@ rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 rafale@workshop:~$ git checkout <FILE PATH>
 ```
 </details>
-🐒 Est sous Max OS, un *.DS_Store* a été crée, il pourrait le supprimer à main mais en tant que bon développeur il se demande comment faire pour que ce fichier n'intéragisse jamais avec git, comment faire ?
+🐒 Est sous Max OS, un .DS_Store a été crée, il pourrait le supprimer à main mais en tant que bon développeur il se demande comment faire pour que ce fichier n'intéragisse jamais avec git, comment faire ?
 <details>
  <summary>Solution</summary>
 
@@ -110,7 +110,7 @@ rafale@workshop:~$ git push <BRANCH NAME>
 ===
 🐒 Décide de modifier son README.md directement depuis la page de son repository sur Github.
 Il y apporte aussi des modifications depuis son PC sans les ajouter / commit / push.
-Il est satisfait de son README mais aimerait récupérer ce qu'il a fait sur Github avant d'ajouter ses fichiers, quelle serait la commande à utiliser ?
+Il est satisfait de son README mais aimerait récupérer en local ce qu'il a fait sur Github avant d'ajouter ses fichiers, quelle serait la commande à utiliser ?
 <details>
  <summary>Solution</summary>
 
