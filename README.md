@@ -160,42 +160,36 @@ rafale@workshop:~$ git switch - #Pour revenir à la dernière version
 
 Step 6 - Travailler avec des branches
 ===
+🐎 A parlé à 🐒 d'une meilleure pratique concernant l'utilisation de branches, il décide donc de lire [cette documentation](https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html).
+
+🐒 A donc envie d'essayer cette nouvelle façon de travailler avec git sans installer git-flow, pour ça la première étape est de créer la branche develop.
 <details>
  <summary>Solution</summary>
 
 ```console
-rafale@workshop:~$ git branch
+rafale@workshop:~$ git branch -b develop && git checkout develop
+rafale@workshop:~$ git checkout -b develop # Manière plus simple de le faire
 ```
 </details>
 
+🐒 A bien créé sa branche mais elle n'apparait pas sur le Github, comment expliquer cela ?
 <details>
  <summary>Solution</summary>
+ 🐒 N'a créé sa branche qu'en local, elle n'apparaitra pas sur le serveur avant qu'elle n'ait été push.
  
- ```console
-rafale@workshop:~$ git checkout <BRANCH NAME>
-```
-</details>
+ Il se peut que 🐎 qui ait déja cloné le repository n'ait pas accès à cette branche même après un push de 🐒, il devra pour la voir exécuter la commande :
 
-<details>
- <summary>Solution</summary>
- 
- ```console
+```console
 rafale@workshop:~$ git fetch
 ```
 </details>
 
+🐒 A bien créé une branche feature dans laquelle il a push sa feature, mais il n'a pas bien compris ce que 🐎 lui à dit de faire pour fusionner se branche feature dans develop, il décide donc ce lire [cette documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing) avant d'essayer des deux méthodes.
 <details>
  <summary>Solution</summary>
 
 ```console
-rafale@workshop:~$ git merge
-```
-</details>
-
-<details>
- <summary>Solution</summary>
-
-```console
-rafale@workshop:~$ git rebase
+rafale@workshop:~$ man git-merge
+rafale@workshop:~$ man git-rebase
 ```
 </details>
