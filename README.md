@@ -1,31 +1,34 @@
 # Workshop_Git-GithubProject
 
 Introduction : 
-What is Git ?
+Qu'est-ce que Git ?
 
-What is Github ?
+Qu'est-ce que Github ?
 
-What is Github Project ?
+Qu'est-ce que Github Project ?
 
 Vous incarnerez 🐒.
 
-Step 0 : Création du projet
+
+Step 0 : Créer le projet
 ===
 🐒 Décide de créer un super site web dont le code source serait hébergé sur Github.
 
-- Créer un *repository* Github en y ajoutant le code que 🐎 lui a donné directement depuis la page du repository. (Readme, gitignore ?)
+- Créer un *repository* Github. (Readme, gitignore ?)
 
-- Se rendre dans la partie *projet* et en créer un nouveau. (Template ?)
+- Ajouter le code que 🐎 lui a donné directement depuis la page du repository.
+ 
+- Se rendre dans la partie *Projet* et en créer un nouveau. (Template ?)
 
-- Créer des notes / issues
+- Créer des notes / issues (Assignees, Project ...)
 
 
 Step 1 - Récupérer le repository en local
 ===
-🐒 Est prêt à coder son site, pour ça il *clone* son projet sur son PC.
+🐒 Est prêt à développer son site, pour ça il décide de *cloner* son projet sur son PC.
 ```console
 rafale@workshop:~$ git clone <SSH KEY>
-``` 
+```
 
 2 - Intéragir avec les modifications apportées au repository
 ===
@@ -37,11 +40,11 @@ rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 ```console
 rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 ```
-🐒 N'a plus envie d'apporter des modifications à son README, il cherche la commande pour remettre ce fichier à son état d'origine.
+🐒 N'a plus envie d'apporter des modifications à son README.md, il cherche la commande pour remettre ce fichier à son état d'origine.
 ```console
 rafale@workshop:~$ git checkout <FILE PATH>
 ```
-🐒 Est sous Max OS, un *.DS_Store* a été crée, il pourrait le supprimer à main mais en tant que bon développeur il se demande comment faire en sorte que ce fichier n'intéragisse jamais avec git, comment faire ?
+🐒 Est sous Max OS, un *.DS_Store* a été crée, il pourrait le supprimer à main mais en tant que bon développeur il se demande comment faire pour que ce fichier n'intéragisse jamais avec git, comment faire ?
 ```console
 rafale@workshop:~$ cat .gitignore
 ```
@@ -63,7 +66,7 @@ rafale@workshop:~$ git add -A
 rafale@workshop:~$ git reset <FILE PATH>
 rafale@workshop:~$ git reset
 ```
-🐒 Rechange d'avis et ajoute ses fichiers et décide de les envoyer sur Github. (Commit name)
+🐒 Rechange d'avis, rajoute ses fichiers et décide de les envoyer sur Github. (Commit name)
 ```console
 rafale@workshop:~$ git commit -m <COMMIT MESSAGE>
 rafale@workshop:~$ git push <BRANCH NAME>
@@ -71,9 +74,9 @@ rafale@workshop:~$ git push <BRANCH NAME>
 
 4 - Récupérer des modifications
 ===
-🐒 Décide de modifier son site directement depuis la page de son repository sur Github.
-Il continue aussi d'apporter des modifications depuis son PC sans les ajouter, commit et push.
-Il a quasiment fini la feature sur laquelle il travaillait mais aimerait récupérer ce qu'il a fait sur Github, quelle serait la commande à utiliser ?
+🐒 Décide de modifier son README.md directement depuis la page de son repository sur Github.
+Il y apporte aussi des modifications depuis son PC sans les ajouter / commit / push.
+Il est satisfait de son README mais aimerait récupérer ce qu'il a fait sur Github avant d'ajouter ses fichiers, quelle serait la commande à utiliser ?
 ```console
 rafale@workshop:~$ git pull <BRANCH NAME>
 ```
@@ -83,7 +86,10 @@ rafale@workshop:~$ git stash
 rafale@workshop:~$ git pull <BRANCH NAME>
 rafale@workshop:~$ git stash pop
 ```
-(Merge ?)
+🐒 Ne comprend pas ce que git lui demande en parlant de *merge* comment faire en sorte de ne gardes que les modifications effectuées en local ? (Merge ?)
+
+    Accept Current Change | Accept Incoming Change | Accept Both Changes | Compare Changes
+    # Séléctionner Incoming Change
 
 5 - Revenir en arrière
 ===
@@ -91,7 +97,7 @@ rafale@workshop:~$ git stash pop
 ```console
 rafale@workshop:~$ git log
 ```
-🐒 Est nostalegique et aimerait revenir à l'époque où Diablox9 était plus connu que Kim Glow, il aimerait donc revenir à son premier commit, quelle serait la commande à utiliser ?
+🐒 Est nostalgique et aimerait revenir à l'époque où Diablox9 était plus connu que Kim Glow, il aimerait donc revenir à son premier commit, quelle serait la commande à utiliser ?
 ```console
 rafale@workshop:~$ git checkout <COMMIT ID>
 rafale@workshop:~$ git switch - #Pour revenir à la dernière version
