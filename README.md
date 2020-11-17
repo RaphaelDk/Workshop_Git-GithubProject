@@ -34,6 +34,7 @@ rafale@workshop:~$ git clone <SSH KEY>
 ```
 </details>
 
+
 2 - Intéragir avec les modifications apportées au repository
 ===
 🐒 Apporte des modifications à son projet mais a oublié quels fichiers ont été modifiés, il se demande quelle commande pourrait l'aider à s'en rappeler.
@@ -74,6 +75,7 @@ rafale@workshop:~$ cat .gitignore
     .DS_Store   #Indique que le fichier DS_Store ne sera pas pris en compte par git
 </details>
 
+
 3 - Envoyer des modifications
 ===
 🐒 Est maintenant satisfait de son travail, il aimerait *ajouter* ses fichiers.
@@ -103,6 +105,7 @@ rafale@workshop:~$ git commit -m <COMMIT MESSAGE>
 rafale@workshop:~$ git push <BRANCH NAME>
 ```
 </details>
+
 
 4 - Récupérer des modifications
 ===
@@ -134,6 +137,7 @@ rafale@workshop:~$ git stash pop
     # Séléctionner Incoming Change
 </details>
 
+
 5 - Revenir en arrière
 ===
 🐒 Ne se rappelle plus de tout le travail qu'il a fait, il sait qu'une commande git existe pour avoir accès à ses commits mais laquelle ?
@@ -154,7 +158,8 @@ rafale@workshop:~$ git switch - #Pour revenir à la dernière version
 ```
 </details>
 
-6 - Travailler avec des branches
+
+Step 6 - Travailler avec des branches
 ===
 <details>
  <summary>Solution</summary>
