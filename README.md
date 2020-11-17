@@ -156,18 +156,42 @@ rafale@workshop:~$ git switch - #Pour revenir à la dernière version
 
 6 - Travailler avec des branches
 ===
+<details>
+ <summary>Solution</summary>
+
 ```console
 rafale@workshop:~$ git branch
 ```
-```console
+</details>
+
+<details>
+ <summary>Solution</summary>
+ 
+ ```console
 rafale@workshop:~$ git checkout <BRANCH NAME>
 ```
-```console
+</details>
+
+<details>
+ <summary>Solution</summary>
+ 
+ ```console
 rafale@workshop:~$ git fetch
 ```
+</details>
+
+<details>
+ <summary>Solution</summary>
+
 ```console
 rafale@workshop:~$ git merge
 ```
+</details>
+
+<details>
+ <summary>Solution</summary>
+
 ```console
 rafale@workshop:~$ git rebase
 ```
+</details>
