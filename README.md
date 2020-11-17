@@ -1,6 +1,5 @@
-# Workshop_Git-GithubProject
-
-Introduction : 
+Introduction :
+===
 Qu'est-ce que Git ?
 
 Qu'est-ce que Github ?
