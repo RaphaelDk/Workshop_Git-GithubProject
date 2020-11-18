@@ -200,7 +200,7 @@ rafale@workshop:~$ git fetch
 
 🐒 A ensuite créé une branche pour sa nouvelle feature mais après l'avoir quasiment terminé il se rend compte qu'il aurait besoin de ce que 🐎 a push sur develop pour qu'elle soit totalement terminée, il aimerait donc amener les modifications faites sur develop dans sa branche.
 
-🐎 Lui avait justement envoyé une documentation à ce sujet, [une documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing), il décide donc d'en prendre connaissance et d'essayer des deux méthodes décrites.
+🐎 Lui avait justement envoyé [une documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing)à ce sujet, il décide donc d'en prendre connaissance et d'essayer des deux méthodes décrites.
 <details>
  <summary>Solution</summary>
 
