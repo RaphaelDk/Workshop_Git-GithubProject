@@ -8,7 +8,7 @@ Step 0 : Créer le projet
 - Créer un *repository* Github.
 > Le README est le fichier le plus important d'un repository public, il permet aux personnes intéressées par le projet de savoir en quoi il consiste, comment l'utiliser ou d'obtenir d'autres informations concernant ce projet. 
 
-- Ajouter le code que 🐎 vous a donné directement depuis la page du repository.
+- Ajouter [le code](https://github.com/RaphaelDk/Workshop_Git-GithubProject/blob/main/index.html) que 🐎 vous a donné directement depuis la page du repository.
  
 - Se rendre dans la partie *Projet* et en créer un nouveau.
 > Nous utiliserons pour ce workshop le template **Automated kanban**, il permet d'automatiquement passer à *done* les issues liées à des pull requests terminées, nous y reviendrons plus tard.
@@ -31,7 +31,7 @@ rafale@workshop:~$ git clone <SSH KEY>
 </details>
 
 
-2 - Intéragir avec les modifications apportées au repository
+Step 2 - Intéragir avec les modifications apportées au repository
 ===
 🐒 Apporte des modifications à son projet mais a oublié quels fichiers ont été modifiés, il se demande quelle commande pourrait l'aider à s'en rappeler.
 <details>
@@ -72,7 +72,7 @@ rafale@workshop:~$ cat .gitignore
 </details>
 
 
-3 - Envoyer des modifications
+Step 3 - Envoyer des modifications
 ===
 🐒 Est maintenant satisfait de son travail, il aimerait *ajouter* ses fichiers.
 <details>
@@ -107,7 +107,7 @@ rafale@workshop:~$ git push <BRANCH NAME>
 >🐒 A donc push sa première feature, il décide donc de remettre à jour son état sur le projet à la main car ce n'est pas encore fait automatiquement.
 
 
-4 - Récupérer des modifications
+Step 4 - Récupérer des modifications
 ===
 🐒 Décide de modifier son README.md directement depuis la page de son repository sur Github.
 Il y apporte aussi des modifications depuis son PC sans les ajouter / commit / push.
@@ -138,7 +138,7 @@ rafale@workshop:~$ git stash pop
 </details>
 
 
-5 - Revenir en arrière
+Step 5 - Revenir en arrière
 ===
 🐒 Ne se rappelle plus de tout le travail qu'il a fait, il sait qu'une commande git existe pour avoir accès à ses commits mais laquelle ?
 <details>
