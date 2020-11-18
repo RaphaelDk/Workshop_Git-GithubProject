@@ -1,11 +1,3 @@
-Introduction :
-===
-Qu'est-ce que Git ?
-
-Qu'est-ce que Github ?
-
-Qu'est-ce que Github Project ?
-
 Vous incarnerez 🐒.
 
 
@@ -13,13 +5,18 @@ Step 0 : Créer le projet
 ===
 🐒 Décide de créer un super site web dont le code source serait hébergé sur Github.
 
-- Créer un *repository* Github. (Readme, gitignore ?)
+- Créer un *repository* Github.
+> Le README est le fichier le plus important d'un repository public, il permet aux personnes intéressées par le projet de savoir en quoi il consiste, comment l'utiliser ou d'obtenir d'autres informations concernant ce projet. 
 
 - Ajouter le code que 🐎 lui a donné directement depuis la page du repository.
  
-- Se rendre dans la partie *Projet* et en créer un nouveau. (Template ?)
+- Se rendre dans la partie *Projet* et en créer un nouveau.
+> Nous utiliserons pour ce workshop le template **Automated kanban**, il permet d'automatiquement passer à *done* les issues liées à des pull requests terminées, nous y reviendrons plus tard.
 
-- Créer des notes / issues (Assignees, Project ...)
+- Créer des issues représentant des fonctionnalités que 🐒 aimerait intégrer au projet.
+> Une note n'existe que dans la partie *Projects* d'un repository à la différence d'une issue qui sera visible directement dans la partie *Issues* qui contient toutes les corrections ou feature que le développeur ajoutera à son projet.
+
+> Les issues que vous créerez vous seront assignées, auront les tags associés et seront dans la colonne du projet qui correspond à leur état.
 
 
 Step 1 - Récupérer le repository en local
@@ -133,7 +130,7 @@ rafale@workshop:~$ git stash pop
  <summary>Solution</summary>
 
     Accept Current Change | Accept Incoming Change | Accept Both Changes | Compare Changes
-    # Séléctionner Incoming Change
+    # Sélectionner Incoming Change
 </details>
 
 
@@ -184,7 +181,9 @@ rafale@workshop:~$ git fetch
 ```
 </details>
 
-🐒 A bien créé une branche feature dans laquelle il a push sa feature, mais il n'a pas bien compris ce que 🐎 lui à dit de faire pour fusionner se branche feature dans develop, il décide donc ce lire [cette documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing) avant d'essayer des deux méthodes.
+🐒 A bien créé une branche feature dans laquelle il a push son travail, mais il n'a pas bien compris ce que 🐎 lui à dit de faire pour fusionner se branche feature dans develop, il décide donc ce lire [cette documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing).
+
+🐒 Se rend compte que sa feature a besoin de ce que 🐎 a fait dans develop afin de fonctionner, il décide donc de tester les deux méthodes de fusion de branches.
 <details>
  <summary>Solution</summary>
 
