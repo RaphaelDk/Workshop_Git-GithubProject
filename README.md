@@ -139,7 +139,7 @@ rafale@workshop:~$ git stash pop
 ```
 </details>
 
-🐒 Ne comprend pas ce que git lui demande en parlant de merge comment faire en sorte de ne garder que les modifications effectuées en local ? (Merge ?)
+🐒 Ne comprend pas ce que git lui demande en parlant de merge comment faire en sorte de ne garder que les modifications effectuées en local ?
 <details>
  <summary>Solution</summary>
 
