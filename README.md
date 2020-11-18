@@ -198,7 +198,9 @@ rafale@workshop:~$ git fetch
 ```
 </details>
 
-🐒 Se rend compte que sa feature a besoin de ce que 🐎 a push sur develop afin de fonctionner, il se rappelle de [la documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing) que 🐎 lui a envoyé à ce sujet, il décide donc d'en prendre connaissance et d'essayer des deux méthodes décrites.
+🐒 A ensuite créé une branche pour sa nouvelle feature mais après l'avoir quasiment terminé il se rend compte qu'il aurait besoin de ce que 🐎 a push sur develop pour qu'elle soit totalement terminée, il aimerait donc amener les modifications faites sur develop dans sa branche.
+
+🐎 Lui avait justement envoyé une documentation à ce sujet, [une documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing), il décide donc d'en prendre connaissance et d'essayer des deux méthodes décrites.
 <details>
  <summary>Solution</summary>
 
@@ -207,3 +209,11 @@ rafale@workshop:~$ man git-merge
 rafale@workshop:~$ man git-rebase
 ```
 </details>
+
+🐒 A donc une branche à jour avec develop et aimerait maintenant mettre sa nouvelle feature sur develop, pour ça il se rend dans la partie *Pull requests* de son repository pour en créer une.
+
+🐒 Voir qu'il pourrait lier cette Pull request à son projet mais il décide de ne pas le faire car il y a déja une issue dans ce projet qui détaille ce qui a été fait dans cette PR.
+
+Après avoir vérifié son code sur cette PR, 🐒 n'est pas satisfait d'une des lignes de son code, il décide donc d'y mettre un commentaire depuis Github.
+
+Après avoir résolu ce problème, 🐒 est satisfait de son travail et décide de merge cette PR, il est content car l'issue liée est directement passéé à done.
