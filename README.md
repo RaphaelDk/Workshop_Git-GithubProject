@@ -8,7 +8,7 @@ Step 0 : Créer le projet
 - Créer un *repository* Github.
 > Le README est le fichier le plus important d'un repository public, il permet aux personnes intéressées par le projet de savoir en quoi il consiste, comment l'utiliser ou d'obtenir d'autres informations concernant ce projet. 
 
-- Ajouter le code que 🐎 lui a donné directement depuis la page du repository.
+- Ajouter le code que 🐎 vous a donné directement depuis la page du repository.
  
 - Se rendre dans la partie *Projet* et en créer un nouveau.
 > Nous utiliserons pour ce workshop le template **Automated kanban**, il permet d'automatiquement passer à *done* les issues liées à des pull requests terminées, nous y reviendrons plus tard.
@@ -49,7 +49,7 @@ rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 ```
 </details>
-🐒 N'a plus envie d'apporter des modifications à son README.md, il cherche la commande pour remettre ce fichier à son état d'origine.
+🐒 A apporté des modifications à son README.md mais change d'avis, il cherche la commande pour remettre ce fichier à son état d'origine.
 <details>
  <summary>Solution</summary>
 
@@ -83,7 +83,7 @@ rafale@workshop:~$ git add <FILE PATH>
 rafale@workshop:~$ git add -A
 ```
 </details>
-🐒 Se change d'avis et décide de ne plus ajouter ses fichiers.
+🐒 Change d'avis et décide de ne plus ajouter ses fichiers.
 <details>
  <summary>Solution</summary>
 
@@ -92,7 +92,9 @@ rafale@workshop:~$ git reset <FILE PATH>
 rafale@workshop:~$ git reset
 ```
 </details>
-🐒 Rechange d'avis, rajoute ses fichiers et décide de les envoyer sur Github. (Commit name)
+🐒 Rechange d'avis, rajoute ses fichiers et décide de les envoyer sur Github.
+
+> Un message de commit doit être une courte phrase résumant ce qui a était fait, s'il est trop long c'est qu'il aurait du être fait plus tot.
 <details>
  <summary>Solution</summary>
 
@@ -101,6 +103,8 @@ rafale@workshop:~$ git commit -m <COMMIT MESSAGE>
 rafale@workshop:~$ git push <BRANCH NAME>
 ```
 </details>
+
+>🐒 A donc push sa première feature, il décide donc de remettre à jour son état sur le projet à la main car ce n'est pas encore fait automatiquement.
 
 
 4 - Récupérer des modifications
@@ -115,7 +119,7 @@ Il est satisfait de son README mais aimerait récupérer en local ce qu'il a fai
 rafale@workshop:~$ git pull <BRANCH NAME>
 ```
 </details>
-🐒 Pense avoir bien fait mais git lui demande de *commit* avant de pourvoir récupérer les modifications, hors il n'a pas envie de commit avant d'avoir récupéré son travail, il décite donc de mettre son travail en local de côté le temps de récupérer son travail en local.
+🐒 Pense avoir bien fait mais git lui demande de commit avant de pourvoir récupérer les modifications, hors il n'a pas envie de commit avant d'avoir récupéré son travail, il décite donc de mettre son travail en local de côté le temps de récupérer son travail en local.
 <details>
  <summary>Solution</summary>
 
@@ -125,7 +129,7 @@ rafale@workshop:~$ git pull <BRANCH NAME>
 rafale@workshop:~$ git stash pop
 ```
 </details>
-🐒 Ne comprend pas ce que git lui demande en parlant de *merge* comment faire en sorte de ne gardes que les modifications effectuées en local ? (Merge ?)
+🐒 Ne comprend pas ce que git lui demande en parlant de merge comment faire en sorte de ne garder que les modifications effectuées en local ? (Merge ?)
 <details>
  <summary>Solution</summary>
 
@@ -181,9 +185,7 @@ rafale@workshop:~$ git fetch
 ```
 </details>
 
-🐒 A bien créé une branche feature dans laquelle il a push son travail, mais il n'a pas bien compris ce que 🐎 lui à dit de faire pour fusionner se branche feature dans develop, il décide donc ce lire [cette documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing).
-
-🐒 Se rend compte que sa feature a besoin de ce que 🐎 a fait dans develop afin de fonctionner, il décide donc de tester les deux méthodes de fusion de branches.
+🐒 Se rend compte que sa feature a besoin de ce que 🐎 a push sur develop afin de fonctionner, il se rappelle de [la documentation](https://www.atlassian.com/fr/git/tutorials/merging-vs-rebasing) que 🐎 lui a envoyé à ce sujet, il décide donc d'en prendre connaissance et d'essayer des deux méthodes décrites.
 <details>
  <summary>Solution</summary>
 
