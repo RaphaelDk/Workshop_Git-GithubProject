@@ -33,6 +33,7 @@ rafale@workshop:~$ git clone <SSH KEY>
 
 Step 2 - Intéragir avec les modifications apportées au repository
 ===
+
 🐒 Apporte des modifications à son projet mais a oublié quels fichiers ont été modifiés, il se demande quelle commande pourrait l'aider à s'en rappeler.
 <details>
  <summary>Solution</summary>
@@ -41,6 +42,7 @@ Step 2 - Intéragir avec les modifications apportées au repository
 rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 ```
 </details>
+
 🐒 Aimerait maintenant savoir quelles modifications ont été apportées aux fichiers, quelle commande utiliser ?
 <details>
  <summary>Solution</summary>
@@ -49,6 +51,7 @@ rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 ```
 </details>
+
 🐒 A apporté des modifications à son README.md mais change d'avis, il cherche la commande pour remettre ce fichier à son état d'origine.
 <details>
  <summary>Solution</summary>
@@ -57,6 +60,7 @@ rafale@workshop:~$ git diff <FILE PATH || SOURCE BRANCH>
 rafale@workshop:~$ git checkout <FILE PATH>
 ```
 </details>
+
 🐒 Est sous Max OS, un .DS_Store a été crée, il pourrait le supprimer à main mais en tant que bon développeur il se demande comment faire pour que ce fichier n'intéragisse jamais avec git, comment faire ?
 <details>
  <summary>Solution</summary>
@@ -74,6 +78,7 @@ rafale@workshop:~$ cat .gitignore
 
 Step 3 - Envoyer des modifications
 ===
+
 🐒 Est maintenant satisfait de son travail, il aimerait *ajouter* ses fichiers.
 <details>
  <summary>Solution</summary>
@@ -83,6 +88,7 @@ rafale@workshop:~$ git add <FILE PATH>
 rafale@workshop:~$ git add -A
 ```
 </details>
+
 🐒 Change d'avis et décide de ne plus ajouter ses fichiers.
 <details>
  <summary>Solution</summary>
@@ -92,6 +98,7 @@ rafale@workshop:~$ git reset <FILE PATH>
 rafale@workshop:~$ git reset
 ```
 </details>
+
 🐒 Rechange d'avis, rajoute ses fichiers et décide de les envoyer sur Github.
 
 > Un message de commit doit être une courte phrase résumant ce qui a était fait, s'il est trop long c'est qu'il aurait du être fait plus tot.
@@ -109,6 +116,7 @@ rafale@workshop:~$ git push <BRANCH NAME>
 
 Step 4 - Récupérer des modifications
 ===
+
 🐒 Décide de modifier son README.md directement depuis la page de son repository sur Github.
 Il y apporte aussi des modifications depuis son PC sans les ajouter / commit / push.
 Il est satisfait de son README mais aimerait récupérer en local ce qu'il a fait sur Github avant d'ajouter ses fichiers, quelle serait la commande à utiliser ?
@@ -119,6 +127,7 @@ Il est satisfait de son README mais aimerait récupérer en local ce qu'il a fai
 rafale@workshop:~$ git pull <BRANCH NAME>
 ```
 </details>
+
 🐒 Pense avoir bien fait mais git lui demande de commit avant de pourvoir récupérer les modifications, hors il n'a pas envie de commit avant d'avoir récupéré son travail, il décite donc de mettre son travail en local de côté le temps de récupérer son travail en local.
 <details>
  <summary>Solution</summary>
@@ -129,6 +138,7 @@ rafale@workshop:~$ git pull <BRANCH NAME>
 rafale@workshop:~$ git stash pop
 ```
 </details>
+
 🐒 Ne comprend pas ce que git lui demande en parlant de merge comment faire en sorte de ne garder que les modifications effectuées en local ? (Merge ?)
 <details>
  <summary>Solution</summary>
@@ -140,6 +150,7 @@ rafale@workshop:~$ git stash pop
 
 Step 5 - Revenir en arrière
 ===
+
 🐒 Ne se rappelle plus de tout le travail qu'il a fait, il sait qu'une commande git existe pour avoir accès à ses commits mais laquelle ?
 <details>
  <summary>Solution</summary>
@@ -148,6 +159,7 @@ Step 5 - Revenir en arrière
 rafale@workshop:~$ git log
 ```
 </details>
+
 🐒 Est nostalgique et aimerait revenir à l'époque où Diablox9 était plus connu que Kim Glow, il aimerait donc revenir à son premier commit, quelle serait la commande à utiliser ?
 <details>
  <summary>Solution</summary>
@@ -161,6 +173,7 @@ rafale@workshop:~$ git switch - #Pour revenir à la dernière version
 
 Step 6 - Travailler avec des branches
 ===
+
 🐎 A parlé à 🐒 d'une meilleure pratique concernant l'utilisation de branches, il décide donc de lire [cette documentation](https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html).
 
 🐒 A donc envie d'essayer cette nouvelle façon de travailler avec git sans installer git-flow, pour ça la première étape est de créer la branche develop.
