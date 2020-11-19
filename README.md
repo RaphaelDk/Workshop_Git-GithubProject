@@ -181,7 +181,7 @@ Step 6 - Travailler avec des branches
  <summary>Solution</summary>
 
 ```console
-rafale@workshop:~$ git branch -b develop && git checkout develop
+rafale@workshop:~$ git branch develop && git checkout develop
 rafale@workshop:~$ git checkout -b develop # Manière plus simple de le faire
 ```
 </details>
